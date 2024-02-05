@@ -1,0 +1,163 @@
+
+
+.homeSection{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    
+}
+
+.homeSection .contain{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeSection .contain .history{
+    width: 70%;
+    position: relative;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeSection .contain .history p{
+    font-size:2rem;
+    line-height: 3rem;
+    text-align: center;
+    
+
+}
+
+ .sep{
+    max-width: 60%;
+    min-height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+ .sep .sepa{
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    border-radius: 30rem;
+}
+
+
+.homeSection .contain .oursValues{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 88%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.homeSection .contain .oursValues .titlebox{
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.homeSection .contain .oursValues .titlebox h3{
+    font-size: 5rem;
+    color: var(--button);
+}
+
+.homeSection .contain .oursValues .valuesbox{
+    position: relative;
+    margin-top: 5rem;
+    max-width: 55rem;
+    border: var(--border);
+    cursor: pointer;
+   
+}
+
+.homeSection .contain .oursValues .valuesbox >*{
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.homeSection .contain .oursValues .valuesbox .valueDes{
+    background-color: var(--button);
+    position: relative;
+    display: none;
+    height: fit-content;
+   
+}
+
+.homeSection .contain .oursValues .valuesbox .valueDes p{
+    padding: 2rem;
+    text-align: justify;
+    text-indent: 1rem;
+}
+
+
+.homeSection .contain .oursValues .valuesbox .valuesList{
+    padding: 15rem;
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #fff;
+    z-index: 1;
+    background-image: url(../images/bcghome.jpeg);
+    background-size: cover;
+}
+.homeSection .contain .oursValues .valuesbox .valuesList::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.57);
+    position: absolute;
+}
+.homeSection .contain .oursValues .valuesbox .valuesList li{
+    padding: 1.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    z-index: 1;
+    text-transform: uppercase;
+    
+}
+.homeSection .contain .oursValues .valuesbox:hover .valuesList{
+    padding: 0;
+    background-image: none;
+    height: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    flex-direction: row;
+    z-index: 1;
+    background-color: aliceblue;
+    transition: 1s ease;
+
+}
+.homeSection .contain .oursValues .valuesbox:hover .valueDes{
+    display: block;
+    overflow: hidden;
+    
+}
+
+.homeSection .contain .oursValues .valuesbox:hover .valuesList::after{
+    
+    display: none;
+   
+
+}
+

@@ -1,0 +1,57 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bcg-color : #f2f2f2;
+    --main-color: #732c02 ;
+    --titled : #558c03;
+    --titles: #4f7302;
+    --button : #f48e10;
+    --black: #13131a;
+    --border: 0.1rem solid #f48e10;
+    --title : 'Playfair Display', serif;
+}
+
+html{
+    font-size: 55.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top:  3rem;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bcg-color);
+    font-family: 'Montserrat', sans-serif
+   
+    
+}
+
+/* section {
+    padding: 2rem 7%;
+} */
+
+
+/* @media screen and( max-width:1020px) {
+    section {
+        padding: 2rem ;
+    }
+    
+} */

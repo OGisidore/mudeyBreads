@@ -1,0 +1,78 @@
+
+
+.service{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 5rem;
+}
+
+.service .servicesCnt{
+    margin-top: 10rem;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 10rem;
+    
+}
+
+ 
+.service .servicesCnt .serviceBox{
+    cursor: pointer;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.service .servicesCnt .serviceBox::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-image: linear-gradient(
+        to top right , var(--main-color) 20%, transparent
+    );
+    /* -webkit-background-image:linear-gradient(
+        to top right , var(--main-color) 20%, transparent
+    ); */
+}
+
+.service .servicesCnt .serviceBox:hover img{
+    scale: 110%;
+    transition: scale 1s;
+}
+
+.service .servicesCnt .serviceBox img{
+    max-width: 100%;
+}
+
+
+.service .servicesCnt .serviceBox .text{
+    max-width: 100%;
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    z-index: 1;
+
+}
+
+
+.service .servicesCnt .serviceBox .text h3{
+    font-size: 4rem;
+    color: white;
+}
+
+
+.service .servicesCnt .serviceBox .text p.stars{
+    color: var(--button);
+    font-size: 2rem;
+}
+
+
+.service .servicesCnt .serviceBox .text p{
+    color: #fff;
+    font-size: 1.8rem;
+}

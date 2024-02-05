@@ -1,0 +1,181 @@
+/*  ----- all parameters of the page heders -------- */
+
+header{
+    width: 100%;
+    
+    /* background-color: var(--main-color); */
+    color: #100404;
+   
+    /* opacity: 0.7; */
+    border-bottom: var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: screen;
+    opacity: 0.95;
+    top: 0;
+    background-color: #faf2f2;
+}
+
+header .container{
+    position: relative;
+    width: 99%;
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    opacity: 100;
+    z-index: 1;
+}
+
+header .container .navbar{
+    /* position: relative; */
+    display: flex;
+}
+header .container .navbar .navlist{
+    display:  flex;
+    list-style: none;
+    
+}
+header .container .navbar .navlist li{
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/* creatimg a after what anime when hovering the a element  */
+
+header .container .navbar .navlist li a:hover::after{
+    content: '';
+    width: 110%;
+    height: .1rem;
+    background-color: var(--button);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+    animation: anime .3s ease-in  ;
+}
+
+@keyframes anime {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 110%;
+        
+    }
+    
+}
+
+/* ---- adding hover effect to <a> element and .fas tag */
+
+header .container .navbar .navlist li:hover a,
+header .container .navbar .icons .fas:hover{
+    color: var(--button);
+    transition: 1s ease-out;
+    
+}
+
+
+header .container .navbar .navlist li a{
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: #050505;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+header .container .navbar .icons{
+    padding: 1rem;
+    font-size: 2rem;
+    display: flex;
+}
+
+header .container .navbar .icons .fas{
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+header .container .navbar .icons .fas.menu{
+    display: none;
+}
+
+header .container .navbar .serchInput{
+    position: absolute;
+    /* transform: translateY(10px); */
+    top: -11rem;
+    width: 37rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    color: var(--title);
+    border-radius: 3rem;
+    padding:  0  0 0 3rem;
+    right: 1.5rem;
+    border: var(--border);
+}
+header .container .navbar .serchInput input{
+    border: none;
+    outline: none;
+    color: var(--titles);
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+header .container .navbar .serchInput input:focus{
+    font-weight: bold;
+    padding-left: 1rem;
+    font-size: 1.7rem;
+}
+
+header .container .navbar .serchInput .fas{
+    color: var(--titles);
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 0 3rem 3rem 0;
+    padding: 2rem;
+}
+
+header .container .navbar .serchInput .fas:hover{
+    background-color: var(--main-color);
+    color: #ffff;
+}
+
+
+@media screen and (max-width : 902px) {
+    header .container .logo img{
+        max-width: 80%;
+    }
+
+header .container .navbar .icons .fas.menu{
+    display: block;
+}
+header .container .navbar .navlist{
+    position: relative;
+    position: absolute;
+    background-color: #ffff;
+    top: 10rem;
+    right: -100%;
+    width: 320px;
+    height: calc(100vh - 10rem);
+
+    display: flex;
+    flex-direction: column;
+}
+
+header .container .navbar .navlist li{
+    padding: 2.5rem 2rem;
+}
+header .container .navbar .navlist li a{
+    color: black;
+}
+}

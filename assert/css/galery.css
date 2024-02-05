@@ -1,0 +1,72 @@
+/* les   parametres de la section galleries */
+
+
+.galery{
+    min-height: 100vh;
+    padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.galery .allGalery{
+    width: 90%;
+    height: 100%;
+}
+
+
+.galery .allGalery .galerybox{
+    margin-bottom: 5rem;
+    padding: 2rem;
+    min-height: 100vh;
+    border-bottom: var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.galery .allGalery .galerybox .image{
+    max-width: 70rem;
+    max-height: 100vh;
+    display: grid;
+    align-items: center;
+    
+   
+}
+
+
+.galery .allGalery .galerybox .image img{
+    max-width: 68%;
+    justify-self: center;
+    box-shadow: 
+    0 .1rem 4rem var(--button),
+    1rem 1rem 2rem  #36343495;
+}
+
+.galery .allGalery .galerybox .description{
+    max-width: 70rem;
+    min-height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.galery .allGalery .galerybox .description .box{
+    justify-self: center;
+    max-width: 90%;
+}
+
+
+.galery .allGalery .galerybox .description .box h3{
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.galery .allGalery .galerybox .description .box p{
+    font-size: 2rem;
+    text-align: center;
+}

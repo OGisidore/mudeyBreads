@@ -1,0 +1,270 @@
+
+
+.products{
+    min-height: 100vh;
+    width: 98%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .titl{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+ .titl h2{
+    font-family: var(--title);
+    font-size: 6rem;
+    color: var(--button);
+}
+
+.products .productbox{
+    width: 88%;
+}
+.products .productbox .filterbox{
+    padding-top: 2rem;
+    position: sticky;
+    width: 100%;
+    top: 10rem;
+    background-color: var(--bcg-color);
+    z-index: 100;
+
+}
+.products .productbox .filterbox h3{
+    font-weight: 100;
+    font-size: 3rem;
+    
+}
+
+.products .productbox .filterbox .filterItems{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap ;
+    gap: .5rem;
+    padding: 2rem;
+   
+    
+}
+
+.products .productbox .filterbox .filters{
+    display: none;
+}
+
+.products .productbox .filterbox .filters p{
+    font-size: 2rem;
+}
+
+
+.products .productbox .filterbox .filters .filtre{
+    border: var(--border);
+    padding: 2rem;
+    appearance: none;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.products .productbox .filterbox .filters .filtre option{
+    background-color: var(--button);
+    font-size: 1.8rem;
+    
+
+}
+
+
+.products .productbox .filterbox .filters .filtre:focus {
+   outline: none;
+}
+
+.products .productbox .filterbox .filterItems li {
+    padding: 1rem;
+    font-size: 2.5rem;
+    border: var(--border);
+    flex: 1rem 0 8rem;
+}
+
+.products .productbox .filterbox .filterItems li a{
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.products .productbox .filterbox .filterItems li:hover{
+    color: #fff;
+    background-color: var(--button);
+    transition: .4s;
+}
+.products .productbox .filterbox .filterItems li.active{
+    background-color: var(--button);
+}
+
+
+.products .productbox .productcontain{
+    width: 98%;
+
+
+}
+.products .productbox .productcontain .Breads{
+    padding-top: 20rem;
+    width: 100%;
+    /* margin-top: 20rem; */
+    /* min-height: calc(100vh - 10rem); */
+    /* display: grid;
+    justify-content: center; */
+}
+
+.products .productbox .productcontain .Breads h2{
+    padding: 2rem 0;
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+
+.products .productbox .productcontain .Breads p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    max-width: 62rem;
+}
+
+.products .productbox .productcontain .Breads .content{
+    margin: 5rem 0;
+    max-width: 100%;
+    /* border: var(--border); */
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 4rem;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread{
+    /* padding: 2rem; */
+    max-width: 100%;
+    min-height: 35rem ;
+    position: relative;
+    border: var(--border);
+    background-size: cover;
+    background-position: 0px -1px;
+}
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(1){
+    background: url(../images/dej.jpeg);
+    background-size: cover;
+}
+.products .productbox .productcontain .Breads .content .bread:nth-child(2){
+    background: url(../images/event.jpeg);
+    background-size: cover;
+}
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(3){
+    background: url(../images/frshbred.jpeg)  ;
+    background-size: cover;
+}
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(4){
+    background: url(../images/livraison.jpeg);
+    background-size: cover;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(5){
+    background: url(../images/cours.jpeg);
+    background-size: cover;
+}
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(6){
+    background: url(../images/commande.jpeg);
+    background-size: cover;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(7){
+    background: url(../images/patiser.jpeg);
+    background-size: cover;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(8){
+    background: url(../images/vente.jpeg);
+    background-size: cover;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread:nth-child(9){
+    background: url(../images/cafe.jpeg);
+    background-size: cover;
+}
+
+
+
+.products .productbox .productcontain .Breads .content .bread .desc {
+    min-height: 10%;
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    background-color: var(--bcg-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.products .productbox .productcontain .Breads .content .bread .desc h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.products .productbox .productcontain .Breads .content .bread .desc p{
+    width: 100%;
+    text-align: center;
+}
+
+
+.products .productbox .productcontain .Breads .content .bread .desc button{
+    padding: 2rem;
+    width: 100%;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    border: var(--border);
+    background-color: var(--button);
+    
+    
+}
+
+
+.products .productbox .productcontain .Breads .content .bread .desc button:hover{
+    background-color: var(--bcg-color);
+    font-weight: bold;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.products .productbox .filterbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .productbox .filterbox .filters .filtre{
+    
+    padding: .8rem;
+}
+
+.products .productbox .filterbox .filters{
+    display: block;
+}
+
+.products .productbox .filterbox .filterItems{
+    display: none;
+}
+    
+}
